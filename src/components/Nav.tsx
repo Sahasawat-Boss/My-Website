@@ -1,44 +1,48 @@
-"use client"
+"use client";
 
-import Link from 'next/link'
-import React, { useState } from 'react'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Link from "next/link";
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-function Nav() {
-    const navLinks = [
-        { title: "About", path: "#About" },
-        { title: "Stack", path: "#stack" },
-        { title: "Projects", path: "#Project1" },
-        { title: "Contact", path: "#contact" },
-    ];
+const navLinks = [
+    { title: "About", path: "#" },
+    { title: "Stack", path: "#stack" },
+    { title: "Projects", path: "#Project1" },
+    { title: "Services", path: "#services" },
+    { title: "Contact", path: "#Contact" },
+];
 
-    const [nav, setNav] = useState(false)
+const Nav = () => {
+    const [navOpen, setNavOpen] = useState(false);
 
     const toggleNav = () => {
-        setNav(!nav)
-    }
+        setNavOpen(!navOpen);
+    };
 
     const closeNav = () => {
-        setNav(false)
-    }
+        setNavOpen(false);
+    };
 
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
-        e.preventDefault(); // Prevent default anchor behavior
+        e.preventDefault();
         const target = document.querySelector(path);
         if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-        closeNav(); // Close mobile menu on click
-    }
+        closeNav();
+    };
 
     return (
-        <div className="z-50 fixed flex justify-center w-full text-white font-bold">
-            <div className="border border-white/40 mt-8 backdrop-blur-3xl rounded-2xl hidden md:flex items-center justify-center py-2 px-4 max-w-[500px]">
-
-                <ul className="flex flex-row p-2 space-x-8">
+        <nav className="fixed w-full top-0 z-50 flex justify-center py-4 px-6 text-white">
+            {/* Desktop Navbar */}
+            <div className="hidden md:flex items-center justify-center backdrop-blur-lg bg-black/55 border border-white/40 rounded-full px-6 py-3">
+                <ul className="flex space-x-9">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                            <Link href={link.path} className="transform hover:text-white/50 transition-all duration-300 ease-in-out">
+                            <Link
+                                href={link.path}
+                                className="hover:text-purple-400 transition-all duration-300"
+                            >
                                 {link.title}
                             </Link>
                         </li>
@@ -46,28 +50,35 @@ function Nav() {
                 </ul>
             </div>
 
-            <div onClick={toggleNav} className="md:hidden absolute top-5 right-4 border rounded z-50 text-white/70 border-white/70 p-2">
-                {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
-            </div>
-
+            {/* Mobile Menu Button */}
             <div
-                className={`fixed left-0 top-0 w-full h-full bg-black/90 transform transition-transform duration-300 
-                    ${nav ? 'translate-x-0' : '-translate-x-full'}`}
+                onClick={toggleNav}
+                className="md:hidden fixed top-6 right-6 border border-white/70 rounded p-2 text-white cursor-pointer z-50"
             >
-                <ul className="flex flex-col items-center justify-center space-y-8 h-full">
+                {navOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            </div>
+
+            {/* Mobile Sidebar */}
+            <div
+                className={`fixed top-0 left-0 w-full h-full bg-black/90 transition-transform duration-300 ${navOpen ? "translate-x-0" : "-translate-x-full"
+                    } md:hidden`}
+            >
+                <ul className="flex flex-col items-center justify-center h-full space-y-10 text-3xl">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                            <Link href={link.path} onClick={(e) => handleSmoothScroll(e, link.path)} className="text-5xl">
+                            <Link
+                                href={link.path}
+                                onClick={(e) => handleSmoothScroll(e, link.path)}
+                                className="hover:text-purple-400 transition-all duration-300"
+                            >
                                 {link.title}
                             </Link>
                         </li>
                     ))}
                 </ul>
-
             </div>
+        </nav>
+    );
+};
 
-        </div>
-    )
-}
-
-export default Nav
+export default Nav;

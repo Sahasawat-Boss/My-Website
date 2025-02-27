@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Modal from "react-modal";
 
-export default function Project2() {
+export default function ProjectOther() {
     const ref = useRef(null);
     const isInView = useInView(ref, { amount: 0.2 }); // Retriggers animation when 20% is in view
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -22,8 +22,8 @@ export default function Project2() {
 
     return (
         <section
-            id="Project2"
-            className="relative w-full h-fit flex flex-col items-center justify-center bg-gradient-to-b from-blue-900 to-black text-white px-14 pb-20"
+            id="ProjectOther"
+            className="relative w-full h-fit flex flex-col items-center justify-center bg-gradient-to-b from-black to-purple-950 text-white px-14 pb-10"
         >
             {/*== Project 2==*/}
             <div ref={ref} className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
@@ -40,21 +40,19 @@ export default function Project2() {
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold text-white">Process Inspection Request System (PIR)</h3>
+                        <h3 className="text-2xl font-bold text-white">My Other Project Sample</h3>
                         <hr className="my-2 border-gray-500" />
-                        <p className="text-gray-300">
-                            PIR enables users to report issues with images, severity levels, and statuses, manage requests with real-time tracking, and generate reports in Excel and PDF, ensuring seamless workflow management.                        </p>
                     </motion.div>
                 </motion.div>
 
                 {/* Right Section: Image */}
                 <motion.div
-                    className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center"
+                    className="w-full grid grid-cols-2  md:grid-cols-3  gap-4 justify-center"
                     initial={{ opacity: 0, x: 50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.6 }}
                 >
-                    {["/PIR/pir1.png", "/PIR/pir4.png", "/PIR/pir2.png", "/PIR/pir3.png"].map((src, index) => (
+                    {["/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png", "/Bp/bp1.png", "/Bp/bp2.png", "/store/Store1.png"].map((src, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.1 }}
@@ -64,8 +62,8 @@ export default function Project2() {
                         >
                             <Image
                                 src={src}
-                                alt="Project Preview"
-                                width={300}
+                                alt="Sample Project"
+                                width={220}
                                 height={150}
                                 className="rounded-lg shadow-lg"
                             />
@@ -86,7 +84,7 @@ export default function Project2() {
                     <Image
                         src={modalImage}
                         alt="Enlarged Project Preview"
-                        width={650}
+                        width={700}
                         height={350}
                         className="rounded-lg"
                     />

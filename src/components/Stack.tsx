@@ -8,36 +8,36 @@ const stackCategories = [
     {
         title: "Frontend",
         stacks: [
-            { name: "TypeScript", icon: <SiTypescript size={50} className="text-blue-400" /> },
-            { name: "Next.js", icon: <SiNextdotjs size={50} className="text-white" />, favorite: true },
-            { name: "Tailwind CSS", icon: <SiTailwindcss size={50} className="text-blue-300" />, favorite: true },
-            { name: "React", icon: <SiReact size={50} className="text-blue-400" /> },
-            { name: "JavaScript", icon: <SiJavascript size={50} className="text-yellow-400" /> },
-            { name: "CSS", icon: <SiCss3 size={50} className="text-blue-500" /> },
-            { name: "HTML", icon: <SiHtml5 size={50} className="text-orange-500" /> },
+            { name: "TypeScript", icon: <SiTypescript size={50} className="  text-blue-400" /> },
+            { name: "Next.js", icon: <SiNextdotjs size={50} className="  text-white" />, favorite: true },
+            { name: "Tailwind CSS", icon: <SiTailwindcss size={50} className=" text-blue-300" />, favorite: true },
+            { name: "React", icon: <SiReact size={50} className=" text-blue-400" /> },
+            { name: "JavaScript", icon: <SiJavascript size={50} className=" text-yellow-400" /> },
+            { name: "CSS", icon: <SiCss3 size={50} className=" text-blue-500" /> },
+            { name: "HTML", icon: <SiHtml5 size={50} className=" text-orange-500" /> },
         ],
     },
     {
         title: "Backend",
         stacks: [
-            { name: "Node.js", icon: <SiNodedotjs size={50} className="text-green-400" /> },
-            { name: "Express.js", icon: <SiExpress size={50} className="text-white" /> },
-            { name: "Prisma", icon: <SiPrisma size={50} className="text-white" />, favorite: true },
+            { name: "Node.js", icon: <SiNodedotjs size={50} className=" text-green-400" /> },
+            { name: "Express.js", icon: <SiExpress size={50} className=" text-white" /> },
+            { name: "Prisma", icon: <SiPrisma size={50} className=" text-white" />, favorite: true },
         ],
     },
     {
         title: "Database",
         stacks: [
-            { name: "MongoDB", icon: <SiMongodb size={50} className="text-green-400" /> },
-            { name: "PostgreSQL", icon: <SiPostgresql size={50} className="text-blue-500" /> },
-            { name: "MySQL", icon: <SiMysql size={50} className="text-orange-500" /> },
+            { name: "MongoDB", icon: <SiMongodb size={50} className=" text-green-400" /> },
+            { name: "PostgreSQL", icon: <SiPostgresql size={50} className=" text-blue-500" /> },
+            { name: "MySQL", icon: <SiMysql size={50} className=" text-orange-500" /> },
         ],
     },
     {
         title: "DevOps",
         stacks: [
-            { name: "GitHub", icon: <SiGithub size={50} className="text-white" /> },
-            { name: "Docker", icon: <SiDocker size={50} className="text-blue-600" /> },
+            { name: "GitHub", icon: <SiGithub size={50} className=" text-white" /> },
+            { name: "Docker", icon: <SiDocker size={50} className=" text-blue-600" /> },
         ],
     },
 ];
@@ -47,7 +47,7 @@ export default function Stack() {
     const isInView = useInView(ref, { amount: 0.25 }); // Retriggers animation when 25% is in view
 
     return (
-        <div id="stack" className="w-full flex justify-center py-16 px-6">
+        <div id="stack" className="w-full flex justify-center py-16 px-6 bg-black">
             <div ref={ref} className="border border-white/20 backdrop-blur-3xl rounded-3xl p-6 mx-auto text-white text-center max-w-5xl">
                 <motion.h2
                     className="text-4xl font-bold mb-6"
@@ -89,7 +89,7 @@ export default function Stack() {
                                         </motion.button>
                                     )}
                                     {stack.icon}
-                                    <span className="text-lg">{stack.name}</span>
+                                    <span className="text-xs sm:text-sm md:text-lg">{stack.name}</span>
                                 </motion.div>
                             ))}
                         </div>

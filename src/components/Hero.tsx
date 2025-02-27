@@ -27,16 +27,24 @@ function Hero() {
     const ref = useRef(null);
     const isInView = useInView(ref, { amount: 0.3 });
 
+    // ✅ Scroll to Contact Section
+    const handleScrollToContact = () => {
+        const contactSection = document.querySelector("#Contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
     return (
         <motion.section
             ref={ref}
             style={{ backgroundImage }}
-            className="relative flex justify-center items-center min-h-[80vh] px-4 py-24 text-gray-200"
+            className="relative flex justify-center items-center h-[80vh] px-4 py-24 text-gray-200"
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
-            <div className="z-10 flex flex-col gap-y-3 items-center">
+            <div id="hero" className="z-10 flex flex-col gap-y-3 items-center">
                 {/* Animated Heading */}
                 <motion.div
                     className="flex gap-3"
@@ -77,24 +85,20 @@ function Hero() {
                     Passionate to be a Fullstack Developer
                 </motion.span>
 
-                {/* Animated Contact Button */}
+                {/* ✅ Animated Contact Button with Scroll Function */}
                 <motion.button
-                    className="flex w-fit item-center gap-2 rounded-full px-5 py-2 text-lg"
+                    className="flex w-fit items-center gap-2 rounded-full px-5 py-2 text-lg cursor-pointer"
                     style={{
                         border,
                         boxShadow
                     }}
-                    whileHover={{
-                        scale: 1.1
-                    }}
-                    whileTap={{
-                        scale: 0.85
-                    }}
-                > Contact Me
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.85 }}
+                    onClick={handleScrollToContact} // Calls the scroll function
+                >
+                    Contact Me
                     <FiArrowRight className="mt-1 text-lg" />
                 </motion.button>
-
-
             </div>
         </motion.section>
     );
