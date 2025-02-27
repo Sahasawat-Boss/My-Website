@@ -39,7 +39,7 @@ function Hero() {
         <motion.section
             ref={ref}
             style={{ backgroundImage }}
-            className="relative flex justify-center items-center xs:h-[80vh] px-6 py-24 text-gray-200"
+            className="relative flex justify-center items-center h-[80vh] px-6 py-24 text-gray-200"
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
