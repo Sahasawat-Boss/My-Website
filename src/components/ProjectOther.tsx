@@ -40,7 +40,7 @@ export default function ProjectOther() {
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold text-white">My Other Project Sample</h3>
+                        <h3 className="text-2xl font-bold text-white">My Other Project Samples</h3>
                         <hr className="my-2 border-gray-500" />
                     </motion.div>
                 </motion.div>
