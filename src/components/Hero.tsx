@@ -28,12 +28,9 @@ function Hero() {
             style={{
                 backgroundImage
             }}
-            className="relative grid min-h-[80vh] place-content-center overflow-hidden px-4 py-24 text-gray-200"
+            className="relative grid  min-h-[80vh] place-content-center overflow-hidden px-4 py-24 text-gray-200"
         >
-            <div className="z-10 flex flex-col items-center">
-                <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
-                    Open for work
-                </span>
+            <div className="z-10 flex flex-col gap-y-3 items-center">
 
                 <div className="flex gap-3">
                     <h1 className="text-white/40 text-3xl md:text-7xl font-black">
@@ -45,13 +42,15 @@ function Hero() {
                     </h1>
                 </div>
                 <Image
-                    className="rounded-full"
+                    className="rounded-full hover:scale-110 transition-transform duration-300"
                     src={"/profilepic.jpg"}
                     alt="profile pic"
                     width={150}
                     height={150}
                 />
-                <p className="my-6 max-w-xl">Passsionated to be Fullstack Developer</p>
+                <span className="mt-2 mb-5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5">
+                    Passsionated to be Fullstack Developer
+                </span>
 
                 <motion.button
                     className="flex w-fit item-center gap-2 rounded-full px-4 py-2"
@@ -60,13 +59,13 @@ function Hero() {
                         boxShadow
                     }}
                     whileHover={{
-                        scale: 1.015
+                        scale: 1.1
                     }}
                     whileTap={{
                         scale: 0.95
                     }}
-                > Download
-                    <FiArrowRight className="" />
+                > Contact Me
+                    <FiArrowRight className="mt-0.5 text-lg" />
                 </motion.button>
 
 

@@ -22,10 +22,18 @@ function Nav() {
         setNav(false)
     }
 
+    const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        const target = document.querySelector(path);
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        closeNav(); // Close mobile menu on click
+    }
 
     return (
         <div className="z-50 fixed flex justify-center w-full text-white font-bold">
-            <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
+            <div className="border border-white/40 mt-8 backdrop-blur-3xl rounded-2xl hidden md:flex items-center justify-center py-2 px-4 max-w-[500px]">
 
                 <ul className="flex flex-row p-2 space-x-8">
                     {navLinks.map((link, index) => (
@@ -49,7 +57,7 @@ function Nav() {
                 <ul className="flex flex-col items-center justify-center space-y-8 h-full">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                            <Link href={link.path} onClick={closeNav} className="text-5xl">
+                            <Link href={link.path} onClick={(e) => handleSmoothScroll(e, link.path)} className="text-5xl">
                                 {link.title}
                             </Link>
                         </li>
