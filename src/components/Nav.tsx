@@ -6,9 +6,9 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 function Nav() {
     const navLinks = [
-        { title: "About", path: "#about" },
-        { title: "Portfolio", path: "#portfolio" },
+        { title: "About", path: "#About" },
         { title: "Stack", path: "#stack" },
+        { title: "Projects", path: "#Project1" },
         { title: "Contact", path: "#contact" },
     ];
 
@@ -46,8 +46,8 @@ function Nav() {
                 </ul>
             </div>
 
-            <div onClick={toggleNav} className="md:hidden absolute top-5 right-14 border rounded z-50 text-white/70 border-white/70 p-2">
-                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            <div onClick={toggleNav} className="md:hidden absolute top-5 right-4 border rounded z-50 text-white/70 border-white/70 p-2">
+                {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
             </div>
 
             <div

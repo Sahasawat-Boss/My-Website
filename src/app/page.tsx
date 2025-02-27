@@ -1,6 +1,9 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Stack from "@/components/Stack";
+import Project1 from "@/components/Project1";
+import Project2 from "@/components/Project2";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -8,6 +11,9 @@ export default function Home() {
       <Nav/>
       <Hero/>
       <Stack/>
+      <Project1/>
+      <Project2/>
+      <Footer/>
     </>
   );
 }

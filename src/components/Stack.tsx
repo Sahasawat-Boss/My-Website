@@ -44,7 +44,7 @@ const stackCategories = [
 
 export default function Stack() {
     const ref = useRef(null);
-    const isInView = useInView(ref, { amount: 0.3 }); // Retriggers animation when 30% is in view
+    const isInView = useInView(ref, { amount: 0.25 }); // Retriggers animation when 25% is in view
 
     return (
         <div id="stack" className="w-full flex justify-center py-16 px-6">
@@ -62,7 +62,7 @@ export default function Stack() {
                 {stackCategories.map((category, catIndex) => (
                     <motion.div
                         key={catIndex}
-                        className="mb-10"
+                        className="mb-8"
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.5, delay: catIndex * 0.2 }}
@@ -70,7 +70,7 @@ export default function Stack() {
                         <h3 className="text-2xl font-semibold mb-4">{category.title}</h3>
 
                         {/* Tech Stack Grid */}
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                             {category.stacks.map((stack, index) => (
                                 <motion.div
                                     key={index}
