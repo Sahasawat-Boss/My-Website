@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="flex flex-col justify-center items-center">
                 {/* Title */}
                 <motion.h2
-                    className="text-3xl md:text-4xl font-bold mb-8"
+                    className="text-3xl sm:text-4xl font-bold mb-8"
                     initial={{ opacity: 0, y: -50 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
                     transition={{ duration: 0.8 }}

@@ -39,7 +39,7 @@ function Hero() {
         <motion.section
             ref={ref}
             style={{ backgroundImage }}
-            className="relative flex justify-center items-center h-[80vh] px-4 py-24 text-gray-200"
+            className="relative flex justify-center items-center xs:h-[80vh] px-6 py-24 text-gray-200"
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -52,12 +52,12 @@ function Hero() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    <h1 className="text-white/40 text-5xl md:text-6xl font-black">
+                    <span className="text-white/40 text-4xl sm:text-6xl font-black">
                         Hello, I&apos;m
-                    </h1>
-                    <h1 className="bg-gradient-to-br from-white to-gray-600 bg-clip-text text-transparent text-5xl md:text-6xl">
+                    </span>
+                    <span className="bg-gradient-to-br from-white to-gray-600 bg-clip-text text-transparent text-4xl sm:text-6xl">
                         Boss
-                    </h1>
+                    </span>
                 </motion.div>
 
                 {/* Animated Profile Picture */}
@@ -77,12 +77,12 @@ function Hero() {
 
                 {/* Animated Subtitle */}
                 <motion.span
-                    className="mt-2 mb-10 inline-block rounded-full bg-gray-600/50 px-3 py-1.5"
+                    className="mt-4 mb-10 inline-block rounded-full bg-gray-600/50 text-xs sm:text-lg px-5 py-1.5"
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                    Passionate to be a Fullstack Developer
+                    I am passionate about becoming a skilled full-stack developer.
                 </motion.span>
 
                 {/* ✅ Animated Contact Button with Scroll Function */}
