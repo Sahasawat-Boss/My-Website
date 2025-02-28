@@ -2,42 +2,42 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql, SiMysql, SiDocker, SiGithub } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql, SiCloudinary , SiDocker, SiGithub } from "react-icons/si";
 
 const stackCategories = [
     {
         title: "Frontend",
         stacks: [
-            { name: "TypeScript", icon: <SiTypescript size={50} className="  text-blue-400" /> },
-            { name: "Next.js", icon: <SiNextdotjs size={50} className="  text-white" />, favorite: true },
-            { name: "Tailwind CSS", icon: <SiTailwindcss size={50} className=" text-blue-300" />, favorite: true },
-            { name: "React", icon: <SiReact size={50} className=" text-blue-400" /> },
-            { name: "JavaScript", icon: <SiJavascript size={50} className=" text-yellow-400" /> },
-            { name: "CSS", icon: <SiCss3 size={50} className=" text-blue-500" /> },
-            { name: "HTML", icon: <SiHtml5 size={50} className=" text-orange-500" /> },
+            { name: "TypeScript", icon: <SiTypescript size={45} className="  text-blue-400" /> },
+            { name: "Next.js", icon: <SiNextdotjs size={45} className="  text-white" />, favorite: true },
+            { name: "Tailwind CSS", icon: <SiTailwindcss size={45} className=" text-blue-300" />, favorite: true },
+            { name: "React", icon: <SiReact size={45} className=" text-blue-400" /> },
+            { name: "JavaScript", icon: <SiJavascript size={45} className=" text-yellow-400" /> },
+            { name: "CSS", icon: <SiCss3 size={45} className=" text-blue-500" /> },
+            { name: "HTML", icon: <SiHtml5 size={45} className=" text-orange-500" /> },
         ],
     },
     {
         title: "Backend",
         stacks: [
-            { name: "Node.js", icon: <SiNodedotjs size={50} className=" text-green-400" /> },
-            { name: "Express.js", icon: <SiExpress size={50} className=" text-white" /> },
-            { name: "Prisma", icon: <SiPrisma size={50} className=" text-white" />, favorite: true },
+            { name: "Node.js", icon: <SiNodedotjs size={45} className=" text-green-400" /> },
+            { name: "Express.js", icon: <SiExpress size={45} className=" text-white" /> },
+            { name: "Prisma", icon: <SiPrisma size={45} className=" text-white" />, favorite: true },
         ],
     },
     {
-        title: "Database",
+        title: "Database and Service",
         stacks: [
-            { name: "MongoDB", icon: <SiMongodb size={50} className=" text-green-400" /> },
-            { name: "PostgreSQL", icon: <SiPostgresql size={50} className=" text-blue-500" /> },
-            { name: "MySQL", icon: <SiMysql size={50} className=" text-orange-500" /> },
+            { name: "MongoDB", icon: <SiMongodb size={45} className=" text-green-400" /> },
+            { name: "PostgreSQL", icon: <SiPostgresql size={45} className=" text-blue-500" /> },
+            { name: "Cloudinary", icon: <SiCloudinary size={45} className="text-blue-400" /> },
         ],
     },
     {
         title: "DevOps",
         stacks: [
-            { name: "GitHub", icon: <SiGithub size={50} className=" text-white" /> },
-            { name: "Docker", icon: <SiDocker size={50} className=" text-blue-600" /> },
+            { name: "GitHub", icon: <SiGithub size={45} className=" text-white" /> },
+            { name: "Docker", icon: <SiDocker size={45} className=" text-blue-600" /> },
         ],
     },
 ];
