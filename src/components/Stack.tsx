@@ -47,7 +47,7 @@ export default function Stack() {
     const isInView = useInView(ref, { amount: 0.25 }); // Retriggers animation when 25% is in view
 
     return (
-        <div id="stack" className="w-full flex justify-center py-16 px-6 bg-black">
+        <div id="stack" className="w-full flex justify-center pt-16 px-6 bg-black">
             <div ref={ref} className="border border-white/20 backdrop-blur-3xl rounded-3xl p-6 mx-auto text-white text-center max-w-5xl">
                 <motion.h2
                     className="text-4xl font-bold mb-6"

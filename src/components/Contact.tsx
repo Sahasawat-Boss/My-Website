@@ -9,7 +9,7 @@ const Contact = () => {
     const isInView = useInView(ref, { amount: 0.25 }); // Animation triggers when 25% is in view
 
     return (
-        <section id="Contact" ref={ref} className="bg-black text-white pt-10 pb-16 px-12 lg:px-20">
+        <section id="Contact" ref={ref} className="bg-black text-white pt-14 pb-8 px-12 lg:px-20">
             <div className="flex flex-col justify-center items-center">
                 {/* Title */}
                 <motion.h2
