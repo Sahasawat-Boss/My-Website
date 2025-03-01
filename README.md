@@ -3,7 +3,7 @@
 ![Next.js](https://img.shields.io/badge/Frontend-Next.js-black?style=flat-square)
 ![React](https://img.shields.io/badge/Frontend-React-blue?style=flat-square)
 ![Tailwind CSS](https://img.shields.io/badge/Styling-TailwindCSS-blue?style=flat-square)
-
+![Vercel](https://img.shields.io/badge/Deployment-Vercel-black?style=flat-square&logo=vercel)
 
 🌍 **Live Website**: [https://your-portfolio-url.com](https://your-portfolio-url.com)  
 
