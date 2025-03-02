@@ -23,7 +23,7 @@ export default function ProjectOther() {
     return (
         <section
             id="ProjectOther"
-            className="relative w-full h-fit flex flex-col items-center justify-center bg-gradient-to-b from-black to-purple-950 text-white px-14 pb-10"
+            className="relative w-full h-fit flex flex-col items-center justify-center bg-gradient-to-b from-black to-purple-950 text-white px-14 pt-8 pb-8"
         >
             {/*== Project 2==*/}
             <div ref={ref} className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
