@@ -57,7 +57,20 @@ export default function Project1() {
                         <h3 className="text-2xl font-bold text-white">AI Chatbot v2</h3>
                         <hr className="my-2 border-gray-500" />
                         <p className="text-gray-300">
-                            AI Chatbot v2 is a fast and intelligent chatbot powered by the Gemini API (free key) for AI-driven conversations. Hosted on Vercel, it delivers seamless interactions but has request limits on the free version.                        </p>
+                            AI Chatbot v2 is a fast and intelligent chatbot powered by the Gemini API (free key)
+                            for AI-driven conversations. Hosted on Vercel, it delivers seamless interactions
+                            but has request limits on the free version.
+                        </p>
+
+                        {/* Stunning Button for AI Chatbot */}
+                        <a
+                            href="https://ai-chatbot-v2-by-boss-five.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        >
+                            Try AI Chatbot v2 →
+                        </a>
                     </motion.div>
                 </motion.div>
 

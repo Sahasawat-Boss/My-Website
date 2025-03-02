@@ -44,6 +44,15 @@ export default function Project2() {
                         <hr className="my-2 border-gray-500" />
                         <p className="text-gray-300">
                             PIR enables users to report issues with images, severity levels, and statuses, manage requests with real-time tracking, and generate reports in Excel and PDF, ensuring seamless workflow management.                        </p>
+                        {/* Stunning Button for PIR System */}
+                        <a
+                            href="https://boss-playground-v1.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        >
+                            Try PIR System →
+                        </a>
                     </motion.div>
                 </motion.div>
 
