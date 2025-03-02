@@ -20,9 +20,9 @@ export const Footer = () => {
                             href={href}
                             target="_blank"
                             aria-label={label}
-                            className="text-gray-200 flex items-center justify-center w-10 h-10 rounded-full hover:text-gray-400 transition-colors"
+                            className="text-gray-200 flex items-center justify-center w-12 h-12 rounded-full hover:text-gray-400 transition-colors hover:scale-125"
                         >
-                            <Icon size={55} />
+                            <Icon size={45} />
                         </a>
                     ))}
                 </ul>
