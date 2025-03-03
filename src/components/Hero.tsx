@@ -66,13 +66,16 @@ function Hero() {
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                    <Image
-                        className="mt-10 md:w-60 rounded-full hover:scale-110 transition-transform duration-300"
-                        src={"/profilepic.jpg"}
-                        alt="profile pic"
-                        width={150}
-                        height={150}
-                    />
+                    <a href="https://github.com/Sahasawat-Boss" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            className="mt-10 md:w-60 rounded-full hover:scale-110 transition-transform duration-300 cursor-pointer"
+                            src={"/profilepic.jpg"}
+                            alt="profile pic"
+                            width={150}
+                            height={150}
+                        />
+                    </a>
+
                 </motion.div>
 
                 {/* Animated Subtitle */}

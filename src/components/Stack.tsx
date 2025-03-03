@@ -2,7 +2,10 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql, SiCloudinary , SiDocker, SiGithub } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
+    SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql,
+    SiCloudinary , SiDocker, SiGithub, SiDbeaver,SiVercel, SiRailway    } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa6";
 
 const stackCategories = [
     {
@@ -31,6 +34,8 @@ const stackCategories = [
             { name: "MongoDB", icon: <SiMongodb size={45} className=" text-green-400" /> },
             { name: "PostgreSQL", icon: <SiPostgresql size={45} className=" text-blue-500" /> },
             { name: "Cloudinary", icon: <SiCloudinary size={45} className="text-blue-400" /> },
+            { name: "TiDB", icon: <FaDatabase size={45} className="text-purple-500" /> },
+            { name: "DBeaver", icon: <SiDbeaver size={45} className="text-blue-300" /> },
         ],
     },
     {
@@ -38,6 +43,8 @@ const stackCategories = [
         stacks: [
             { name: "GitHub", icon: <SiGithub size={45} className=" text-white" /> },
             { name: "Docker", icon: <SiDocker size={45} className=" text-blue-600" /> },
+            { name: "Vercel", icon: <SiVercel size={40} className="text-white" /> },
+            { name: "Railway", icon: <SiRailway size={45} className="text-white-500" /> }
         ],
     },
 ];
