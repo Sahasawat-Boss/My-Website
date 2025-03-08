@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
     SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql,
-    SiCloudinary , SiDocker, SiGithub, SiDbeaver,SiVercel, SiRailway    } from "react-icons/si";
+    SiCloudinary , SiDocker, SiGithub, SiDbeaver,SiVercel, SiRailway ,SiNetlify} from "react-icons/si";
 import { FaDatabase } from "react-icons/fa6";
 
 const stackCategories = [
@@ -44,7 +44,8 @@ const stackCategories = [
             { name: "GitHub", icon: <SiGithub size={45} className=" text-white" /> },
             { name: "Docker", icon: <SiDocker size={45} className=" text-blue-600" /> },
             { name: "Vercel", icon: <SiVercel size={40} className="text-white" /> },
-            { name: "Railway", icon: <SiRailway size={45} className="text-white-500" /> }
+            { name: "Railway", icon: <SiRailway size={45} className="text-white-500" /> },
+            { name: "Netlify", icon: <SiNetlify size={45} className="text-blue-500" /> },
         ],
     },
 ];
