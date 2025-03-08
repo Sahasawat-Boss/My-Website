@@ -54,22 +54,20 @@ export default function Project1() {
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold text-white">AI Chatbot v2</h3>
+                        <h3 className="text-2xl font-bold text-white">AI-Summarizer</h3>
                         <hr className="my-2 border-gray-500" />
                         <p className="text-gray-300">
-                            AI Chatbot v2 is a fast and intelligent chatbot powered by the Gemini API (free key)
-                            for AI-driven conversations. Hosted on Vercel, it delivers seamless interactions
-                            but has request limits on the free version.
+                        AI-Summarizer is a web application that extracts and summarizes web articles into concise, easy-to-read summaries using AI.
                         </p>
 
                         {/* Stunning Button for AI Chatbot */}
                         <a
-                            href="https://ai-chatbot-v2-by-boss-five.vercel.app/"
+                            href="https://ai-summarizer-boss-demo.netlify.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mt-4 inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
                         >
-                            Try AI Chatbot v2 →
+                            Try AI-Summarizer →
                         </a>
                     </motion.div>
                 </motion.div>
@@ -81,7 +79,7 @@ export default function Project1() {
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.8 }}
                 >
-                    {["/aichat2/aichat1md.png", "/aichat2/aichat2md.png"].map((src, index) => (
+                    {["/ai-sum/ai-sum1.jpg", "/ai-sum/ai-sum2.jpg"].map((src, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.1 }}
