@@ -23,22 +23,8 @@ export default function Project1() {
     return (
         <section
             id="Project1"
-            className="relative w-full h-fit flex flex-col items-center justify-center bg-gradient-to-b from-black to-blue-900 text-white px-14 pt-20"
+            className="relative w-full h-fit flex flex-col items-center justify-center bg-gradient-to-b from-blue-900 to-green-900 text-white px-14 pt-6"
         >
-            {/*== Title ==*/}
-            <div ref={ref} className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-                <motion.div
-                    className="w-fit"
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.8 }}
-                >
-                    <h2 className="text-5xl font-bold mt-8  mb-8">
-                        My <span className="text-purple-400">Recent Projects</span>
-                    </h2>
-                </motion.div>
-            </div>
-
             {/*== Project 2==*/}
             <div ref={ref} className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
                 {/* Left Section: Text */}
@@ -57,7 +43,7 @@ export default function Project1() {
                         <h3 className="text-2xl font-bold text-white">AI-Summarizer</h3>
                         <hr className="my-2 border-gray-500" />
                         <p className="text-gray-300">
-                        AI-Summarizer is a web application that extracts and summarizes web articles into concise, easy-to-read summaries using AI.
+                            AI-Summarizer is a web application that extracts and summarizes web articles into concise, easy-to-read summaries using AI.
                         </p>
 
                         {/* Stunning Button for AI Chatbot */}

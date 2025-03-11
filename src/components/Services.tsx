@@ -6,19 +6,24 @@ import { motion, useInView } from "framer-motion";
 const services = [
     {
         "id": "01",
-        "title": "Web Development",
-        "description": "Building high-performance, scalable web applications and websites that deliver seamless user experiences while aligning with your brand’s vision and business objectives."
+        "title": "Workflow Design",
+        "description": "Optimizing and structuring business processes with efficient workflow solutions to enhance productivity and streamline operations."
     },
     {
         "id": "02",
-        "title": "Mockup Design",
-        "description": "Transforming ideas into visually compelling and user-centric mockups, ensuring intuitive layouts, aesthetics, and seamless functionality before development begins."
+        "title": "Product Design & Prototyping",
+        "description": "Designing and prototyping digital products (apps, websites, dashboards) with interactive mockups to validate ideas before development."
     },
     {
         "id": "03",
-        "title": "Workflow Design",
-        "description": "Optimizing and structuring business processes with efficient workflow solutions to enhance productivity and streamline operations."
-    }
+        "title": "Web Development",
+        "description": "Building high-performance, scalable web-app and websites that deliver seamless user experiences while aligning with your brand’s vision and business objectives."
+    },
+    {
+        "id": "04",
+        "title": "AI-Powered Solutions",
+        "description": "Implementing AI-driven features like chatbots, automation, and recommendation systems to enhance business efficiency and user engagement."
+    },
 ];
 
 const fadeInVariants = {
@@ -57,8 +62,8 @@ const Services: FC = () => {
                                 {service.id}
                             </span>
                             <div>
-                                <h3 className="text-xl font-semibold">{service.title}</h3>
-                                <p className="text-gray-400">{service.description}</p>
+                                <h3 className="text-xl font-bold mb-0.5">{service.title}</h3>
+                                <p className="text-gray-300 text-lg">{service.description}</p>
                             </div>
                         </motion.div>
                     ))}

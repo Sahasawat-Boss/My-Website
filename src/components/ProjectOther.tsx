@@ -46,7 +46,7 @@ export default function ProjectOther() {
                         transition={{ duration: 0.5 }}
                     >
                         <div className="flex flex-col max-w-xs justify-center items-center">
-                            <h3 className="text-2xl font-bold text-white text-center border-b border-gray-500 mt-4 my-3 pb-2">
+                            <h3 className="text-3xl font-bold text-white text-center border-b border-gray-500 mt-4 my-3 pb-2">
                                 My Other Projects
                             </h3>
                         </div>
