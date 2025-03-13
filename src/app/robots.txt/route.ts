@@ -1,7 +1,7 @@
 export async function GET() {
     const robots = `User-agent: *
-Allow: /
-Sitemap: https://bossbsynth.com/sitemap.xml`;
+  Allow: /
+  Sitemap: https://bossbsynth.com/sitemap.xml`;
 
     return new Response(robots, {
         headers: {
