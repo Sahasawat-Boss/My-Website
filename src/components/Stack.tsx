@@ -2,10 +2,12 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
+import {
+    SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
     SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql,
-    SiCloudinary , SiDocker, SiGithub, SiDbeaver,SiVercel, SiRailway ,SiNetlify} from "react-icons/si";
-import { FaDatabase } from "react-icons/fa6";
+    SiCloudinary, SiDocker, SiGithub, SiDbeaver, SiVercel, SiRailway, SiNetlify, SiNestjs
+} from "react-icons/si";
+import { FaDatabase, FaServer  } from "react-icons/fa6";
 
 const stackCategories = [
     {
@@ -23,19 +25,20 @@ const stackCategories = [
     {
         title: "Backend",
         stacks: [
-            { name: "Node.js", icon: <SiNodedotjs size={45} className=" text-green-400" /> },
-            { name: "Express.js", icon: <SiExpress size={45} className=" text-white" /> },
-            { name: "Prisma", icon: <SiPrisma size={45} className=" text-white" />, favorite: true },
+            { name: "Node.js", icon: <SiNodedotjs size={45} className="text-green-400" /> },
+            { name: "Express.js", icon: <SiExpress size={45} className="text-white" /> },
+            { name: "NestJS", icon: <SiNestjs size={45} className="text-red-500" /> },
+            { name: "Prisma", icon: <SiPrisma size={45} className="text-white" />, favorite: true },
         ],
     },
     {
         title: "Database and Service",
         stacks: [
-            { name: "MongoDB", icon: <SiMongodb size={45} className=" text-green-400" /> },
-            { name: "PostgreSQL", icon: <SiPostgresql size={45} className=" text-blue-500" /> },
+            { name: "MongoDB", icon: <SiMongodb size={45} className="text-green-400" /> },
+            { name: "PostgreSQL", icon: <SiPostgresql size={45} className="text-blue-500" /> },
+            { name: "Neon Cloud", icon: <SiPostgresql size={45} className="text-cyan-400" /> }, // Assuming Neon uses PostgreSQL
             { name: "Cloudinary", icon: <SiCloudinary size={45} className="text-blue-400" /> },
             { name: "TiDB", icon: <FaDatabase size={45} className="text-purple-500" /> },
-            { name: "DBeaver", icon: <SiDbeaver size={45} className="text-blue-300" /> },
         ],
     },
     {
@@ -48,6 +51,14 @@ const stackCategories = [
             { name: "Netlify", icon: <SiNetlify size={45} className="text-blue-500" /> },
         ],
     },
+    {
+        title: "Local Development",
+        stacks: [
+            { name: "XAMPP", icon: <FaServer size={45} className="text-orange-500" /> },
+            { name: "DBeaver", icon: <SiDbeaver size={45} className="text-blue-300" /> },
+        ],
+    }
+    
 ];
 
 export default function Stack() {
