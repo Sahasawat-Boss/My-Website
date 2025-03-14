@@ -39,6 +39,7 @@ const stackCategories = [
             { name: "Neon Cloud", icon: <SiPostgresql size={45} className="text-cyan-400" /> }, // Assuming Neon uses PostgreSQL
             { name: "Cloudinary", icon: <SiCloudinary size={45} className="text-blue-400" /> },
             { name: "TiDB", icon: <FaDatabase size={45} className="text-purple-500" /> },
+            { name: "DBeaver", icon: <SiDbeaver size={45} className="text-blue-300" /> },
         ],
     },
     {
@@ -55,7 +56,6 @@ const stackCategories = [
         title: "Local Development",
         stacks: [
             { name: "XAMPP", icon: <FaServer size={45} className="text-orange-500" /> },
-            { name: "DBeaver", icon: <SiDbeaver size={45} className="text-blue-300" /> },
         ],
     }
     
