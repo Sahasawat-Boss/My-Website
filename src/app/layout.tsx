@@ -15,10 +15,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Boss's Website | Full-Stack Developer",
   description: "Welcome to Boss's Website. Explore my projects, skills, and portfolio as a Full-Stack Developer.",
-  keywords: "Full-Stack Developer, Web Developer, Next.js, React, Tailwind CSS, MongoDB",
+  keywords: "Full-Stack Developer, Web Developer, Next.js, React, Boss, bossbsynth ",
   authors: [{ name: "Sahasawat Ruenkaew", url: "https://bossbsynth.com" }],
   creator: "Sahasawat Ruenkaew",
   robots: "index, follow",  // Allow search engines to index the site
+  icons: {
+    icon: "/favicon.ico", // This is the correct way to set the favicon in Next.js (App Router)
+  },
 };
 
 
