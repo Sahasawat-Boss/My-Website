@@ -57,7 +57,7 @@ export default function ProjectOther() {
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6 }}
                     >
-                        {["/aichat2/aichat2md.png", "/aichat2/aichat1md.png", "/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png", "/Bp/bp1.png", "/Bp/bp2.png", "/store/Store1.png"].map((src, index) => (
+                        {["/other/Sone2.png", "/other/Sone.png","/aichat2/aichat2md.png", "/aichat2/aichat1md.png", "/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png", "/Bp/bp1.png", "/Bp/bp2.png", "/store/Store1.png"].map((src, index) => (
                             <motion.div
                                 key={index}
                                 whileHover={{ scale: 1.1 }}
