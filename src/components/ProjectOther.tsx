@@ -12,7 +12,7 @@ export default function ProjectOther() {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
     const images = [
-        "/other/Sone3.png", "/other/Sone.png",
+        "/other/Sone3.png", "/other/Sone.png","/other/galmock.png",
         "/aichat2/aichat2md.png", "/aichat2/aichat1md.png",
         "/Bp/bp1.png", "/Bp/bp2.png", 
         "/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png",
@@ -84,8 +84,8 @@ export default function ProjectOther() {
                             <Image
                                 src={src}
                                 alt={`Project ${index + 1}`}
-                                width={220}
-                                height={150}
+                                width={250}
+                                height={250}
                                 className="rounded-lg shadow-lg"
                             />
                         </motion.div>
