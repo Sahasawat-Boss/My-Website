@@ -86,7 +86,7 @@ function Hero() {
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.6 }}
                     >
-                        I am passionate about becoming a skilled full-stack developer.
+                        I&apos;m passionate about mastering full-stack development.
                     </motion.span>
 
                     {/* ✅ Animated Contact Button with Scroll Function */}
