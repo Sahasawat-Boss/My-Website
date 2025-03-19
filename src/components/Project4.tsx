@@ -57,7 +57,7 @@ export default function Project4() {
                         <h3 className="text-2xl font-bold text-white">BSlip-Checker</h3>
                         <hr className="my-2 border-gray-500" />
                         <p className="text-gray-300">
-                            BSlip-Checker is a web application designed to verify and extract information from Thai bank transfer slips.                        </p>
+                        BSlip Checker verifies transaction details from Thai bank transfer slips by comparing uploaded slips with actual bank transaction records.                    </p>
 
                         {/* Stunning Button for AI Chatbot */}
                         <a
