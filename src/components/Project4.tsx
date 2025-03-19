@@ -64,7 +64,7 @@ export default function Project4() {
                             href="https://www.youtube.com/shorts/ylGrFObM-uw"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-4 inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                            className="mt-4 inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-900 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
                         >
                             BSlip-Checker VDO
                         </a>

@@ -36,7 +36,7 @@ const Services: FC = () => {
     const isInView = useInView(ref, { amount: 0.2 }); // Retriggers animation when 20% is in view
 
     return (
-        <section id="services" ref={ref} className="bg-black text-white pt-24 px-12 mx-auto md:px-24">
+        <section id="services" ref={ref} className="bg-black text-white pt-24 px-12 pb-24 mx-auto md:px-24">
             <div className="max-w-5xl mx-auto">
                 <motion.h2
                     className="text-3xl md:text-4xl font-bold text-purple-400 uppercase mb-8"

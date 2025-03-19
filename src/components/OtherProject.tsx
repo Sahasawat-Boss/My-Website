@@ -13,7 +13,7 @@ export default function ProjectOther() {
 
     const images = [
         "/other/Sone3.png", "/other/Sone.png", '/mockup/mock1.png', '/mockup/mock2.png', '/mockup/mock3.png',
-        "/aichat2/aichat2md.png", "/aichat2/aichat1md.png",
+        "/other/aichat2.png",
         "/Bp/bp1.png", "/Bp/bp2.png",
         "/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png",
         "/store/Store1.png",
@@ -63,22 +63,22 @@ useEffect(() => {
 
 
     return (
-        <section className="relative w-full flex flex-col items-center justify-center bg-gradient-to-b from-black to-purple-950 text-white px-6 pt-12 pb-16">
+        <section className="relative w-full flex flex-col items-center justify-center bg-gradient-to-b from-black to-green-950 text-white px-6 pt-12 pb-16">
 
             {/* Title with Animation */}
             <motion.div
                 className="w-full text-center mb-6"
-                initial={{ opacity: 0, y: -20 }}
+                initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <h3 className="text-4xl font-extrabold text-white drop-shadow-md border-b-4 border-purple-500 inline-block pb-2">
-                    Featured Projects
+                <h3 className="text-4xl font-bold text-white drop-shadow-md border-b-4 border-purple-700 inline-block pb-1">
+                    Other Projects
                 </h3>
             </motion.div>
 
             {/* Scrollable Image Section with Arrows */}
-            <div className="relative w-full max-w-5xl flex items-center justify-center">
+            <div className="relative w-full max-w-5xl flex items-center justify-center bg-black/30 ">
 
                 {/* Left Arrow */}
                 <button
@@ -137,12 +137,12 @@ useEffect(() => {
                 {/* Click anywhere to close */}
                 <div className="absolute inset-0" onClick={closeModal}></div>
 
-                <div className="relative bg-gray-900 p-6 rounded-lg shadow-lg">
+                <div className="relative bg-gray-500 p-2 shadow-lg">
 
                     {/* Close Button */}
                     <button
                         onClick={closeModal}
-                        className="absolute top-4 right-4 bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition"
+                        className="absolute top-4 right-4 bg-black p-1.5 rounded-full border hover:scale-110 hover:bg-gray-400 transition"
                     >
                         <AiOutlineClose className="w-6 h-6 text-white" />
                     </button>
@@ -150,9 +150,9 @@ useEffect(() => {
                     <Image
                         src={modalImage}
                         alt="Enlarged Project Preview"
-                        width={800}
-                        height={450}
-                        className="rounded-lg"
+                        width={1000}
+                        height={600}
+                        className="shadow-xl"
                     />
                 </div>
             </Modal>
