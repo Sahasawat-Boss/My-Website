@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-    SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
+    SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiOpenai, SiClaude,
     SiTailwindcss, SiNodedotjs, SiExpress, SiPrisma, SiMongodb, SiPostgresql,
     SiCloudinary, SiDocker, SiGithub, SiDbeaver, SiVercel, SiRailway, SiNetlify, SiNestjs, SiVuedotjs
 } from "react-icons/si";
@@ -15,10 +15,10 @@ const stackCategories = [
     {
         title: "Frontend",
         stacks: [
-            { name: "Vue.js", icon: <SiVuedotjs size={45} className="text-green-400" /> }, 
             { name: "Next.js", icon: <SiNextdotjs size={45} className="text-white" /> },
             { name: "Tailwind CSS", icon: <SiTailwindcss size={45} className="text-blue-300" /> },
             { name: "React", icon: <SiReact size={45} className="text-blue-400" /> },
+            { name: "Vue.js", icon: <SiVuedotjs size={45} className="text-green-400" /> },
             { name: "TypeScript", icon: <SiTypescript size={45} className="text-blue-400" /> },
             { name: "JavaScript", icon: <SiJavascript size={45} className="text-yellow-400" /> },
             { name: "CSS", icon: <SiCss3 size={45} className="text-blue-500" /> },
@@ -26,7 +26,7 @@ const stackCategories = [
         ],
     },
     {
-        title: "Backend",
+        title: "Backend and ORM",
         stacks: [
             { name: "Node.js", icon: <SiNodedotjs size={45} className="text-green-400" /> },
             { name: "Express.js", icon: <SiExpress size={45} className="text-white" /> },
@@ -66,6 +66,8 @@ const stackCategories = [
         stacks: [
             { name: "VS Code", icon: <VscVscodeInsiders size={45} className="text-blue-500" /> },
             { name: "Cursor AI", icon: <BsHexagonHalf size={45} className="text-gray-300" /> },
+            { name: "GPT Plus", icon: <SiOpenai size={45} className="text-green-600" /> },
+            { name: "Claude 3.7", icon: <SiClaude size={45} className="text-orange-600" /> },
         ],
     }
 ];
