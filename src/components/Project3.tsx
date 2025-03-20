@@ -47,7 +47,7 @@ export default function Project3() {
                         </p>
                         {/* Stunning Button for PIR System */}
                         <a
-                            href="https://puresmile-clinic-by-boss-demo.vercel.app/"
+                            href="https://puresmile-clinic-bsynth-demo.vercel.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mt-4 inline-block px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
