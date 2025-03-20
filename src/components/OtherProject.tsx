@@ -45,21 +45,25 @@ export default function ProjectOther() {
 useEffect(() => {
     const interval = setInterval(() => {
         if (scrollContainerRef.current) {
-            if (
-                scrollContainerRef.current.scrollLeft + scrollContainerRef.current.clientWidth >=
-                scrollContainerRef.current.scrollWidth
-            ) {
-                // If at the end, scroll back to the start
-                scrollContainerRef.current.scrollTo({ left: 0, behavior: "smooth" });
+            const { scrollLeft, clientWidth, scrollWidth } = scrollContainerRef.current;
+
+            if (scrollLeft + clientWidth >= scrollWidth - 10) {
+                // Pause before resetting to start (prevents abrupt jump)
+                setTimeout(() => {
+                    if (scrollContainerRef.current) {
+                        scrollContainerRef.current.scrollTo({ left: 0, behavior: "instant" });
+                    }
+                }, 350); // Small delay before resetting
             } else {
-                // Otherwise, keep scrolling right
+                // Keep scrolling right
                 scrollContainerRef.current.scrollBy({ left: 400, behavior: "smooth" });
             }
         }
-    }, 1500); // Faster scroll every 1.5 seconds
+    }, 1500); // Scroll every 1.5 seconds
 
     return () => clearInterval(interval);
 }, []);
+
 
 
     return (
