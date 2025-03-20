@@ -67,21 +67,31 @@ function Hero() {
                         animate={isInView ? { opacity: 1, scale: 1 } : {}}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <a href="https://github.com/Sahasawat-Boss" target="_blank" rel="noopener noreferrer">
-                            <Image
-                                className="mt-10 md:w-60 rounded-full hover:scale-110 transition-transform duration-300 cursor-pointer"
-                                src={"/profilepic.jpg"}
-                                alt="profile pic"
-                                width={150}
-                                height={150}
-                            />
-                        </a>
+                        {/* Profile Picture with Hover Effect */}
+                        <div className="relative mt-10 rounded-full overflow-hidden cursor-pointer group">
+                            <a href="https://github.com/Sahasawat-Boss" target="_blank" rel="noopener noreferrer">
+                                {/* Profile Image */}
+                                <Image
+                                    className="md:w-60 w-40 h-40 md:h-60 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                                    src="/profile-pic.jpg"
+                                    alt="profile pic"
+                                    width={150}
+                                    height={150}
+                                />
+                                {/* Hover Overlay */}
+                                <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <span className="text-white text-center font-semibold text-sm sm:text-lg">
+                                        View Boss&apos;s GitHub
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
 
                     </motion.div>
 
                     {/* Animated Subtitle */}
                     <motion.span
-                        className="mt-4 mb-10 inline-block rounded-full bg-gray-600/50 text-xs sm:text-lg px-5 py-1.5"
+                        className="mt-4 mb-10 inline-block rounded-full bg-gray-600/50 text-center text-sm sm:text-lg px-5 py-1.5"
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.6 }}
