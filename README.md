@@ -30,7 +30,11 @@ This project showcases my **skills, projects, and experience** as a **Full-Stack
 | **Vercel**      | Deployment |
 
 ---
-![Screenshot 2025-03-01 111954](https://github.com/user-attachments/assets/381299b2-252e-4fe1-89f1-59afa34ca753)
-![Screenshot 2025-03-01 112000](https://github.com/user-attachments/assets/4b34a00c-c073-43aa-b7e2-9acbc25d5e72)![Screenshot 2025-03-01 112033](https://github.com/user-attachments/assets/8ff45f3e-67c3-4d38-abab-da1cdc2bebc6)
+![image](https://github.com/user-attachments/assets/3eb67206-351a-4360-a17b-eb2d4bd70625)
+
+![image](https://github.com/user-attachments/assets/941b7b87-4c96-4522-a958-c1fcd6e81d9b)
+
+![image](https://github.com/user-attachments/assets/92129967-6e88-48d7-bf6f-468439795418)
+
 
 
