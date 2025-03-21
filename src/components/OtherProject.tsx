@@ -13,7 +13,7 @@ export default function ProjectOther() {
 
     const images = [
         "/other/Sone3.png", "/other/Sone.png", '/mockup/mock1.png', '/mockup/mock2.png', '/mockup/mock3.png',
-        "/other/aichat2.png",
+        "/other/aichat2.png", "/other/SrollGall.png",
         "/Bp/bp1.png", "/Bp/bp2.png",
         "/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png",
         "/store/Store1.png",
@@ -51,7 +51,7 @@ useEffect(() => {
                 // Pause before resetting to start (prevents abrupt jump)
                 setTimeout(() => {
                     if (scrollContainerRef.current) {
-                        scrollContainerRef.current.scrollTo({ left: 0, behavior: "instant" });
+                        scrollContainerRef.current.scrollTo({ left: 0, behavior: "smooth" });
                     }
                 }, 350); // Small delay before resetting
             } else {
