@@ -13,6 +13,7 @@ export default function ProjectOther() {
 
     const images = [
         "/other/Sone3.png", "/other/Sone.png", '/mockup/mock1.png', '/mockup/mock2.png', '/mockup/mock3.png',
+        "/other/EC01.png", "/other/EC02.png",
         "/other/aichat2.png", "/other/SrollGall.png",
         "/Bp/bp1.png", "/Bp/bp2.png",
         "/Bp/crud2.png", "/Bp/crud.png", "/Bp/crud3.png",
