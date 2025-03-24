@@ -7,6 +7,3 @@ const config = {
 };
 
 export default config;
-
-// PostCSS is a tool for transforming CSS with JavaScript plugins.
-// It's used behind the scenes in tools like Tailwind CSS, Next.js
