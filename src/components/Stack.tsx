@@ -74,7 +74,7 @@ const stackCategories = [
 
 export default function Stack() {
     const ref = useRef(null);
-    const isInView = useInView(ref, { amount: 0.25 });
+    const isInView = useInView(ref, { amount: 0.15 });
 
     return (
         <div id="stack" className="w-full flex justify-center pt-16 px-6 bg-black">
