@@ -1,5 +1,5 @@
 import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
+import Hero from "@/componentsV2/Hero2";
 import Stack from "@/components/Stack";
 import Project1 from "@/components/Project1";
 import Project2 from "@/components/Project2";

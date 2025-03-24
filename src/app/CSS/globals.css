@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -20,34 +18,52 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ============= CSS Scrollbar ============= */
+/* ================== CSS Scrollbar ================== */
 /* For WebKit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 10px; /* Adjust the width */
-  height: 10px; /* Adjust the height for horizontal scrollbar */
+  width: 10px;
+  /* Adjust the width */
+  height: 10px;
+  /* Adjust the height for horizontal scrollbar */
 }
 
 /* Track (background) */
 ::-webkit-scrollbar-track {
-  background: #1a1a1a; /* Dark background */
+  background: #1a1a1a;
+  /* Dark background */
   border-radius: 5px;
 }
 
 /* Handle (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: #444; /* Dark grey handle */
+  background: #444;
+  /* Dark grey handle */
   border-radius: 5px;
   transition: background 0.3s ease;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #666; /* Slightly lighter for hover effect */
+  background: #666;
+  /* Slightly lighter for hover effect */
 }
 
 /* Scrollbar corner */
 ::-webkit-scrollbar-corner {
-  background: #1a1a1a; /* Match track color */
+  background: #1a1a1a;
+  /* Match track color */
 }
-/* ============= CSS Scrollbar ============= */
 
+/* ================= CSS Scrollbar ================= */
+
+/* ================= CSS Comps2 ================= */
+.fluid3h {
+  font-size: calc(10px + 3vw);
+}
+
+
+
+/*! ================= Tailwind CSS @apply ================= */
+.hover {
+  @apply cursor-pointer hover:scale-105 transform duration-200 ease-in-out
+}
