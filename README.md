@@ -5,7 +5,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Styling-TailwindCSS-blue?style=flat-square)
 ![Vercel](https://img.shields.io/badge/Deployment-Vercel-black?style=flat-square&logo=vercel)
 
-🌍 **Live Website**: [https://bossbsynth.com/
+🌍 **Live Website**: https://boss-website-bay.vercel.app/
 ](https://bossbsynth.com/)
 ## 📖 Overview
 Welcome to **Boss Portfolio**, a fully responsive and modern **developer portfolio website**.  
